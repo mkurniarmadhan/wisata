@@ -14,6 +14,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('migrate', function () {
 
     Artisan::call('migrate:fresh --seed');
+
+
+    return to_route('homepage.index');
 });
 
 
