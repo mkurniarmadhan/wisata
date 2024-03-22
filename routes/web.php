@@ -4,11 +4,17 @@ use App\Http\Controllers\Admin\WisataController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\HomePageController;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 
 
+
+Route::get('migrate', function () {
+
+    Artisan::call('migrate:fresh --seed');
+});
 
 
 // ini dapat di akses kalo sudah login
