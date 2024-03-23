@@ -17,8 +17,7 @@ class WisataSeeder extends Seeder
             'namaWisata' => "Danau Weekuri",
             'lokasiWisata' => "Sumba Barat Daya",
             'deskripsiWisata' => "Danau Air Asin",
-            'tarifMasuk' => 50000,
+            'tarifMasuk' => 10000,
         ]);
-        
     }
 }

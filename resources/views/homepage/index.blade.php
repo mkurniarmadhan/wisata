@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -118,10 +115,10 @@
     </header>
 
     <!-- Banner Section End -->
-    
-    <section class="banner set-bg" data-setbg="https://live.staticflickr.com/4695/40047637681_3f15e4d723_b.jpg" style="background-image: url(
-        https://live.staticflickr.com/4695/40047637681_3f15e4d723_b.jpg      
-    )">
+
+    <section class="banner set-bg"
+        data-setbg="https://liburanyuk.co.id/wp-content/uploads/2020/12/@sisitimur-.-819x1024.jpg"
+        style="background-image: url(https://liburanyuk.co.id/wp-content/uploads/2020/12/@sisitimur-.-819x1024.jpg)">
         <div class="container">
             <div class="row">
                 <div class="col-xl-7 col-lg-8 m-auto">
@@ -130,17 +127,21 @@
                             <div class="banner__text">
                                 <span class="text-white">E-TIKET</span>
                                 <h1 class="text-white">Website Wisata Danau Weekuri</h1>
-                                <a href="#" class="text-white">HARGA TIKET MASUK Rp. 10.000  </a>
+                                <a href="#" class="text-white">HARGA TIKET MASUK Rp. 10.000 </a>
                             </div>
                         </div>
 
-                        <h6>  
-                            <span class="text-white">                                          
-                            Danau Weekuri merupakan tempat wisata air asin yang terletak di Desa Kalena Rongo, Kecamatan Kodi Utara, Kabupaten Sumba Barat Daya, Nusa Tenggara Timur.
-                    Danau Weekuri terletak sekitar 60 kilometer dari ibu kota kabupaten, Tambolaka.Nama Weekuri berasal dari bahasa Sumba Wee yang berarti air dan kuri yang berarti parutan atau percikan.
-                Danau Weekuri dipercaya terbentuk dari air laut yang terpercik melalui karang sehingga menembus ke daratan.     
-            </span>
-            </h6>
+                        <h6>
+                            <span class="text-white">
+                                Danau Weekuri merupakan tempat wisata air asin yang terletak di Desa Kalena Rongo,
+                                Kecamatan Kodi Utara, Kabupaten Sumba Barat Daya, Nusa Tenggara Timur.
+                                Danau Weekuri terletak sekitar 60 kilometer dari ibu kota kabupaten, Tambolaka.Nama
+                                Weekuri berasal dari bahasa Sumba Wee yang berarti air dan kuri yang berarti parutan
+                                atau percikan.
+                                Danau Weekuri dipercaya terbentuk dari air laut yang terpercik melalui karang sehingga
+                                menembus ke daratan.
+                            </span>
+                        </h6>
 
                     </div>
                 </div>
@@ -156,7 +157,7 @@
                         <h4>Daftar Wisata</h4>
                     </div>
                 </div>
-               
+
             </div>
             <div class="row property__gallery">
 
@@ -195,13 +196,13 @@
                     <div class="footer__about">
                         <div class="footer__logo">
                             <a href="#">
-                           
+
                             </a>
                         </div>
                     </div>
                 </div>
 
-                
+
             </div>
             <div class="row">
                 <div class="col-lg-12">

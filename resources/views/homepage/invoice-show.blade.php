@@ -85,15 +85,14 @@
 
                                                 @if (!$order->buktiBayar)
                                                     Silahkan melakukan pembayaran pada rekening yang tertera dibawah
-                                                    (Setelah Transfer
-                                                    WAJIB Konfirmasi Pembayaran Anda). Silahkan Klik Konfirmasi ,
-                                                    Untuk
-                                                    Langkah Selanjutnya.
+                                                    (Setelah transfer
+                                                    WAJIB konfirmasi pembayaran anda). Silahkan klik konfirmasi,untuk
+                                                    langkah selanjutnya.
                                                 @else
                                                     @if (!$order->statusBayar)
                                                         Permintaan anda sudah dikirim
-                                                        <a target="_blank" 
-                                                            href="https://api.whatsapp.com/send/?phone=6282144892035&text=hallo%20Admin%0AKONFIRMASI%20PEMESANAN%0A%0ANO%20PEMESANAN%0A{{ $order->id }}%0A%0A">KONFRIMAS
+                                                        <a target="_blank"
+                                                            href="https://api.whatsapp.com/send/?phone=6282144892035&text=hallo%20Admin%0AKONFIRMASI%20PEMESANAN%0A%0ANO%20PEMESANAN%0A{{ $order->id }}%0A%0A">KONFIRMASI
                                                             KE ADMIN</a>
                                                     @endif
 
@@ -107,9 +106,13 @@
                                     <div class="checkout__order__product">
                                         <ul>
                                             <li>
-                                                <span class="top__text">BRI
+                                                <span class="top__text">
+                                                    THOMAS AQUINAS EFRIANO NGONGO
                                                     <br>
-                                                    EQUIN NO RENING 3579 0103 7609 536
+                                                    BANK BRI
+                                                    <br>
+                                                    3579 0103 7609 536
+
                                                 </span>
                                             </li>
 
@@ -135,7 +138,7 @@
                                                     </svg></span>
                                                 <span class="user-name">{{ $tiket->id }}</span>
                                             </div>
-                                            
+
                                             <div class="ticket-type  col-md-6 col-sm-6 col-xs-12">
                                                 <span class="divider hidden-xs"></span>
                                                 <span class="type">{{ $order->wisata->namaWisata }}</span>
