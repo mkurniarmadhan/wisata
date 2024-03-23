@@ -18,6 +18,7 @@ class WisataSeeder extends Seeder
             'lokasiWisata' => "Sumba Barat Daya",
             'deskripsiWisata' => "Danau Air Asin",
             'tarifMasuk' => 10000,
+            'foto' => 'danau-weekuri.jpg'
         ]);
     }
 }
