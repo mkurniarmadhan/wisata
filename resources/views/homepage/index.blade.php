@@ -116,9 +116,8 @@
 
     <!-- Banner Section End -->
 
-    <section class="banner set-bg"
-        data-setbg="https://liburanyuk.co.id/wp-content/uploads/2020/12/@sisitimur-.-819x1024.jpg"
-        style="background-image: url(https://liburanyuk.co.id/wp-content/uploads/2020/12/@sisitimur-.-819x1024.jpg)">
+    <section class="banner set-bg" data-setbg="https://live.staticflickr.com/4695/40047637681_3f15e4d723_b.jpg"
+        style="background-image: url(https://live.staticflickr.com/4695/40047637681_3f15e4d723_b.jpg)">
         <div class="container">
             <div class="row">
                 <div class="col-xl-7 col-lg-8 m-auto">
