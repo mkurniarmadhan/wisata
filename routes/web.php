@@ -4,18 +4,20 @@ use App\Http\Controllers\Admin\WisataController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\HomePageController;
+use App\Models\User;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Password;
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Support\Str;
 
 
 
 Route::get('migrate', function () {
 
     Artisan::call('migrate:fresh --seed');
-
-
     return to_route('homepage.index');
 });
 
@@ -64,6 +66,26 @@ Route::middleware(['guest'])->group(function () { // cek login . kalo sudah diar
     Route::post('doLogin', [AuthController::class, 'doLogin'])->name('doLogin');
     Route::get('register', [AuthController::class, 'register'])->name('register');
     Route::post('doregister', [AuthController::class, 'doRegister'])->name('doRegister');
+    Route::get('lupa-password', function () {
+        return view('auth.lupa-password');
+    })->name('lupa.password');
+
+
+    Route::post('/reset-password', function (Request $request) {
+        $request->validate([
+            'token' => 'required',
+            'email' => 'required|email',
+            'password' => 'required|min:8|confirmed',
+        ]);
+
+        $user = User::where([['email', $request->email]])->first();
+        $user->Fill([
+            'password' => Hash::make($request->password)
+        ]);
+        $user->save();
+
+        return      redirect()->route('login')->with('status', 'Password berhasil di ubah');
+    })->middleware('guest')->name('password.update');
 });
 
 

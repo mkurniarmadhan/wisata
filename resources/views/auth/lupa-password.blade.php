@@ -18,8 +18,10 @@
     <!-- Checkout Section Begin -->
     <section class="checkout spad">
         <div class="container">
-            <form action="{{ route('doLogin') }}" method="POST" class="checkout__form">
+            <form action="{{ route('password.update') }}" method="POST" class="checkout__form">
                 @csrf
+
+                <input type="text" name="token" id="" value="{{ str()->random(60) }}">
                 <div class="row">
                     <div class="col-lg-8">
                         <h5>Login </h5>
@@ -33,19 +35,23 @@
                             </div>
                             <div class="col-lg-12">
                                 <div class="checkout__form__input">
-                                    <p>Password <span>*</span></p>
+                                    <p>Password Baru <span>*</span></p>
                                     <input type="password" class="form-control" name="password"
+                                        placeholder="Enter password" required="required" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="checkout__form__input">
+                                    <p>Masukan Ulang Password <span>*</span></p>
+                                    <input type="password" class="form-control" name="password_confirmation"
                                         placeholder="Enter password" required="required" autocomplete="off">
                                 </div>
                             </div>
 
                         </div>
-                        <div class="d-flex">
-                            <p>Belum Punya Akun ? <a href="{{ route('register') }}">daftar</a> </p>
-                            <p class="ml-auto"> <a href="{{ route('lupa.password') }}">Lupa Password</a></p>
-                        </div>
-
+                        <p>Belum Punya Akun ? <a href="{{ route('register') }}">daftar</a> </p>
                         <button type="submit" class="btn btn-primary btn-signin">login</button>
+
 
 
                     </div>
