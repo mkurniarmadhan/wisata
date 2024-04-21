@@ -21,10 +21,10 @@
             <form action="{{ route('password.update') }}" method="POST" class="checkout__form">
                 @csrf
 
-                <input type="text" name="token" id="" value="{{ str()->random(60) }}">
+                <input type="hidden" name="token" id="" value="{{ str()->random(60) }}">
                 <div class="row">
                     <div class="col-lg-8">
-                        <h5>Login </h5>
+                        <h5>LUPA PASSWORD </h5>
                         <div class="row">
                             <div class="col-lg-12 col-md-6 col-sm-6">
                                 <div class="checkout__form__input">
